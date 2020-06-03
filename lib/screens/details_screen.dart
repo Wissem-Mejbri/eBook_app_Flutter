@@ -134,8 +134,9 @@ class DetailsScreen extends StatelessWidget {
                                   SizedBox(width: 10),
                                   Expanded(
                                     child: RoundedButton(
-                                      text: "Read",
-                                      verticalPadding: 10,
+                                      text: "Buy",
+                                      fontSize: 15,
+                                      horizontalPadding: 0, //ive added this property to fix the bottom overflow
                                     ),
                                   ),
                                 ],
@@ -300,7 +301,7 @@ class BookInfo extends StatelessWidget {
                           ),
                           child: FlatButton(
                             onPressed: () {},
-                            child: Text("Read", 
+                            child: Text("Buy", 
                             style: TextStyle(fontWeight: FontWeight.bold),),
                           ), 
                         )
