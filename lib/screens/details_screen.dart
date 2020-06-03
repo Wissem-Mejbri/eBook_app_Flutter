@@ -51,7 +51,7 @@ class DetailsScreen extends StatelessWidget {
                       ChapterCard(
                         name: "Influence",
                         chapterNumber: 3,
-                        tag: "Influence easily like never before",
+                        tag: "Influence like never before",
                         press: () {},
                       ),
                       ChapterCard(
@@ -283,7 +283,7 @@ class BookInfo extends StatelessWidget {
                           width: this.size.width * .3,
                           padding: EdgeInsets.only(top: this.size.height * .02),
                           child: Text(
-                            "When the earth was flat andeveryone wanted to win the gameof the best and people and winning with an A game with all the things you have.",
+                            "When the earth was flat and everyone wanted to win the game of surviving, it was a...",
                             maxLines: 5,
                             style: TextStyle(
                               fontSize: 10,
@@ -300,7 +300,8 @@ class BookInfo extends StatelessWidget {
                           ),
                           child: FlatButton(
                             onPressed: () {},
-                            child: Text("Read", style: TextStyle(fontWeight: FontWeight.bold),),
+                            child: Text("Read", 
+                            style: TextStyle(fontWeight: FontWeight.bold),),
                           ), 
                         )
                       ],
@@ -313,7 +314,7 @@ class BookInfo extends StatelessWidget {
                         ), 
                         BookRating(score: 4.9),
                       ],
-                    )
+                    ),
                   ],
                 )
               ],
@@ -321,6 +322,7 @@ class BookInfo extends StatelessWidget {
           ),
           Expanded(
             flex: 1,
+            
             child: Container(
               color: Colors.transparent,
               child: Image.asset(
