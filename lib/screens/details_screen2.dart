@@ -21,7 +21,7 @@ class DetailsScreen extends StatelessWidget {
                   height: size.height * .48,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage("assets/images/bg.png"),
+                      image: AssetImage("assets/images/book-2.png"),
                       fit: BoxFit.fitWidth,
                     ),
                     borderRadius: BorderRadius.only(
