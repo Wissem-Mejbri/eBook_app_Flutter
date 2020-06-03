@@ -65,11 +65,22 @@ class HomeScreen extends StatelessWidget {
                             );
                           },
                         ),
+                        
                         ReadingListCard(
                           image: "assets/images/book-2.png",
                           title: "Top Ten Business Hacks",
                           auth: "Herman Joel",
                           rating: 4.8,
+                           pressDetails: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) {
+                                  return DetailsScreen();
+                                },
+                              ),
+                            );
+                          },
                         ),
                         SizedBox(width: 30),
                       ],
@@ -283,7 +294,7 @@ class HomeScreen extends StatelessWidget {
               height: 40,
               width: size.width * .3,
               child: TwoSideRoundedButton(
-                text: "Read",
+                text: "Buy",
                 radious: 24,
                 press: () {},
               ),
